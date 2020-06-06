@@ -1,4 +1,4 @@
-package client;
+package rmi.client;
 
 import org.apache.commons.collections.Transformer;
 import org.apache.commons.collections.functors.ChainedTransformer;
@@ -8,6 +8,7 @@ import org.apache.commons.collections.keyvalue.TiedMapEntry;
 import org.apache.commons.collections.map.LazyMap;
 
 import javax.management.BadAttributeValueExpException;
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -17,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class HelloClient_object {
+public class HelloClient_lookup {
 
 
     public static void main(String[] args) throws NotBoundException {
@@ -41,15 +42,19 @@ public class HelloClient_object {
             field.set(badAttributeValueExpException, tiedMapEntry);
 
             Registry registry = LocateRegistry.getRegistry("127.0.0.1",1099);
-            HelloInterface_object hello = (HelloInterface_object) registry.lookup("hello1");
-            System.out.println(hello.sayHello(badAttributeValueExpException));
-
+            Naming.lookup(registry,badAttributeValueExpException);
 
         }catch (RemoteException e){
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

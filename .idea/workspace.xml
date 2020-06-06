@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="933de912-5e11-43ad-872c-f3b23e572583" name="Default Changelist" comment="" />
+    <list default="true" id="933de912-5e11-43ad-872c-f3b23e572583" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/ExecTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/client/client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/server/ldap_server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/server/ldap_server_high.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/server/rmi_server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jndi/server/rmi_server_high.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/HelloClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/HelloClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/HelloClient_lookup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/HelloClient_lookup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/HelloClient_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/HelloClient_object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/HelloInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/HelloInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/HelloInterface_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/HelloInterface_object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Naming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/client/Naming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/registry/RegistryCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/registry/RegistryCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloImpl_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloImpl_object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloInterface_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloInterface_object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/HelloServer_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmi/server/HelloServer_object.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,8 +52,10 @@
   </component>
   <component name="ProjectId" id="1cNjEA20F66p1oPvpI6pmKN7zEl" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,11 +79,11 @@
   </component>
   <component name="RunManager" selected="Application.RegistryCenter">
     <configuration name="HelloClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.HelloClient" />
+      <option name="MAIN_CLASS_NAME" value="rmi.client.HelloClient" />
       <module name="rmi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.*" />
+          <option name="PATTERN" value="rmi.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,18 +92,18 @@
       </method>
     </configuration>
     <configuration name="HelloServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.HelloServer" />
+      <option name="MAIN_CLASS_NAME" value="rmi.client.server.HelloServer" />
       <module name="rmi" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="RegistryCenter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="registry.RegistryCenter" />
+      <option name="MAIN_CLASS_NAME" value="rmi.client.registry.RegistryCenter" />
       <module name="rmi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="registry.*" />
+          <option name="PATTERN" value="rmi.client.registry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +131,29 @@
       <updated>1590375830774</updated>
       <workItem from="1590375835272" duration="10339000" />
       <workItem from="1590457368341" duration="27960000" />
+      <workItem from="1590822348252" duration="598000" />
+      <workItem from="1591258367614" duration="22000" />
+      <workItem from="1591363540695" duration="262000" />
+      <workItem from="1591410959959" duration="129000" />
+      <workItem from="1591413340444" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

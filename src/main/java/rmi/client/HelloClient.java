@@ -1,6 +1,6 @@
-package client;
+package rmi.client;
 
-import server.HelloInterface;
+import rmi.server.HelloInterface;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

@@ -1,4 +1,4 @@
-package registry;
+package rmi.registry;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

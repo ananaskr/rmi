@@ -1,4 +1,4 @@
-package client;
+package rmi.client;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
